@@ -5,7 +5,7 @@ const SignIn = () => {
   const navigate = useNavigate();
 
   const handleSignIn = () => {
-    Auth.signIn(() => {
+    Auth.login(() => {
       navigate("/myprofile");
     });
   };
