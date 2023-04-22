@@ -1,8 +1,13 @@
 import Auth from "./Auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, matchPath, useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  const isArticlesPage = ["/articles/:id"].find((route) =>
+    matchPath(route, pathname)
+  );
 
   const handleSignIn = () => {
     Auth.login(() => {
@@ -38,10 +43,25 @@ const Header = () => {
           <ul className="menu-list">
             <li>welcome back</li>
             <li>
-              <Link to={"/"}>Home</Link>
+              <Link className={pathname === "/" ? "active" : ""} to={"/"}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to={"/myprofile"}>My Profile</Link>
+              <Link
+                className={pathname === "/myprofile" ? "active" : ""}
+                to={"/myprofile"}
+              >
+                My Profile
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={isArticlesPage ? "active" : ""}
+                to={"/articles/10283"}
+              >
+                My Articles
+              </Link>
             </li>
             <li>
               <button type="button" onClick={handleSignOut}>

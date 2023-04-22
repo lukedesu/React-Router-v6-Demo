@@ -8,3 +8,8 @@ a {
   list-style: none;
   gap: 1rem;
 }
+
+.menu-list .active {
+  text-decoration: none;
+  color: black;
+}
