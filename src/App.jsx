@@ -1,13 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Layout from "./Layout";
-import ProtectedRoute from "./ProtectedRoute";
-import Home from "./Home";
-import SignIn from "./SignIn";
-import MyProfile from "./MyProfile";
-import Articles from "./Articles";
-
-import "./App.css";
+import Layout from "./components/Layout";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Home from "./pages/Home";
+import SignIn from "./components/SignIn";
+import MyProfile from "./pages/MyProfile";
+import Articles from "./pages/Articles";
 
 function App() {
   return (

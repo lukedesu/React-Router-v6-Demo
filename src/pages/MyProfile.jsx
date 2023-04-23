@@ -1,7 +1,7 @@
 const MyProfile = () => {
   return (
-    <div style={{ padding: "1rem" }}>
-      <h1>My profile</h1>
+    <>
+      <h1 className="text-3xl">My profile</h1>
       <p>
         Aliquam pellentesque tincidunt augue. Maecenas a augue vel massa
         ultrices consectetur. Cras nisl sapien, porta non diam vitae, convallis
@@ -17,7 +17,7 @@ const MyProfile = () => {
         ligula libero eget urna. Interdum et malesuada fames ac ante ipsum
         primis in faucibus.
       </p>
-    </div>
+    </>
   );
 };
 

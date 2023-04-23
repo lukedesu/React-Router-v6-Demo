@@ -1,7 +1,7 @@
 const Home = () => (
-  <div style={{ padding: "1rem" }}>
-    <h1>Home page</h1>
-    <p>
+  <>
+    <h1 className="text-3xl">Home page</h1>
+    <p className="mt-4">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
@@ -12,7 +12,7 @@ const Home = () => (
       publishing software like Aldus PageMaker including versions of Lorem
       Ipsum.
     </p>
-    <p>
+    <p className="mt-4">
       Contrary to popular belief, Lorem Ipsum is not simply random text. It has
       roots in a piece of classical Latin literature from 45 BC, making it over
       2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
@@ -25,7 +25,7 @@ const Home = () => (
       Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
       amet..", comes from a line in section 1.10.32.
     </p>
-  </div>
+  </>
 );
 
 export default Home;

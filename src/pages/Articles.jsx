@@ -4,7 +4,7 @@ const Article = () => {
   const { id } = useParams();
 
   return (
-    <div style={{ padding: "1rem" }}>
+    <>
       <p>article content {id}</p>
       <p>Other Articles:</p>
       <ul>
@@ -18,7 +18,7 @@ const Article = () => {
           <Link to="/articles/3">Article 3</Link>
         </li>
       </ul>
-    </div>
+    </>
   );
 };
 
